@@ -1,0 +1,421 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>The Lost Truth | A Journey Through Time</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar">
+  <a href="#" class="logo" id="homeBtn">THE LOST TRUTH</a>
+
+  <span class="mission-label">MISSION 001 / MARS ... animation, site development, and original music/score by Akshita Nanduri,
+    storywriting by Raghava Nanduri, and visual art by Ailinh Le</span>
+
+
+  <button id="ambientToggle" class="sound-toggle" type="button">
+    SOUND: OFF
+  </button>
+</nav>
+  
+
+  <!-- OPENING SCREEN -->
+  <section id="intro" class="intro">
+
+    
+
+    <div class="intro-content">
+
+      <!-- OPENING SPACE ANIMATION -->
+<div class="space-animation">
+
+    <div class="planet earth">
+        <img src="earf.png" alt="Earth">
+        <span>EARTH</span>
+    </div>
+
+    <div class="planet mars">
+        <img src="marz.png" alt="Mars">
+        <span>MARS</span>
+    </div>
+
+    <div class="pathfinder">
+        <div class="pathfinder-trail"></div>
+        <div class="pathfinder-body"></div>
+        <span>PATHFINDER</span>
+    </div>
+
+</div>
+
+
+      <p class="eyebrow">A STORY OF EXPLORATION</p>
+
+      <h1>BUT NOT ALL<br>EXPLORERS<br><span>COME HOME.</span></h1>
+
+      <p class="intro-description">
+        In 1997, a tiny robotic explorer traveled
+        millions of miles to another world, but it never came back.
+        This is the story of Sojourner.
+      </p>
+
+      <button id="startBtn" class="primary-btn">
+        BEGIN THE JOURNEY →
+      </button>
+
+      <p class="intro-footer">
+        MARS PATHFINDER · 1996–1997
+      </p>
+
+    </div>
+
+  </section>
+
+
+  <!-- DOCUMENTARY -->
+  <main id="documentary" hidden>
+
+<!-- PROLOGUE -->
+<section id="prologue" class="prologue" hidden>
+  <div class="prologue-content">
+
+    <p class="prologue-label">A MESSAGE FROM MARS</p>
+
+    <h1>I AM STILL HERE.</h1>
+
+    <div class="prologue-divider"></div>
+
+    <p>
+      Somewhere, on a planet millions of miles from home,
+      I remain.
+    </p>
+
+    <p>
+      The people who sent me here once listened for my signals.
+      They waited for my discoveries. They watched as I traversed
+      a world they had only dreamed of seeing.
+    </p>
+
+    <p>
+      But eventually, the signals stopped. Everything went silent.
+    </p>
+
+    <p>
+      No more commands. No more messages from Earth.
+      Just the quiet red landscape around me.
+    </p>
+
+    <p>
+      I was never supposed to stay forever.
+      I was only supposed to explore. 
+    </p>
+
+    <p>
+      But before I became a ghost of another world...
+      I was something else entirely.
+    </p>
+
+    <h2>I WAS AN IDEA.</h2>
+
+
+
+
+
+
+    <button id="prologueContinue" class="primary-btn">
+      TRAVEL BACK IN TIME →
+    </button>
+
+  </div>
+</section>
+<!-- END PROLOGUE -->
+
+
+    <!-- ANIMATED SCENE -->
+    <section class="scene" id="scene">
+
+      <div class="stars"></div>
+
+      <div class="earth">
+        <img src="earf.png" alt="Earth">
+      </div>
+
+      <div class="mars">
+        <img src="marz.png" alt="Mars">
+      </div>
+      <div class="mars-ground"></div>
+
+      <!-- CSS ILLUSTRATION OF SOJOURNER -->
+      <div class="rover" id="rover">
+
+        <div class="antenna"></div>
+        <div class="camera"></div>
+
+        <div class="rover-body">
+          <div class="rover-detail"></div>
+        </div>
+
+        <div class="wheel wheel-1"></div>
+        <div class="wheel wheel-2"></div>
+        <div class="wheel wheel-3"></div>
+        <div class="wheel wheel-4"></div>
+        <div class="wheel wheel-5"></div>
+        <div class="wheel wheel-6"></div>
+
+      </div>
+
+      <div class="scene-label" id="sceneLabel">
+        A NEW WORLD
+      </div>
+
+    </section>
+
+
+    <!-- STORY CONTENT -->
+    <section class="story-container">
+
+      <div class="chapter-info">
+
+        <p class="eyebrow" id="chapterNumber">
+          CHAPTER 01 / 06
+        </p>
+
+        <h2 id="chapterTitle">
+          The Beginning
+        </h2>
+
+        <p id="chapterText">
+          Before I touched the soil of Mars, I was just an idea.
+        </p>
+
+      </div>
+
+
+      <!-- SCIENCE FACT -->
+      <aside class="fact-box">
+
+        <p class="eyebrow">MISSION CONTROL / DID YOU KNOW?</p>
+
+        <h3 id="factTitle">A tiny explorer</h3>
+
+        <p id="factText">
+          I weighed approximately 10.6 kilograms.
+        </p>
+
+      </aside>
+
+
+      <!-- CHAPTER PROGRESS -->
+      <div class="progress-section">
+
+        <div class="progress-labels">
+          <span>MISSION PROGRESS</span>
+          <span id="progressText">1 / 6</span>
+        </div>
+
+        <div class="progress-track">
+          <div id="progressBar"></div>
+        </div>
+
+      </div>
+
+
+      <!-- CONTROLS -->
+      <div class="controls">
+
+        <button id="prevBtn" class="secondary-btn">
+          ← PREVIOUS
+        </button>
+
+        <button id="nextBtn" class="primary-btn">
+          NEXT CHAPTER →
+        </button>
+
+      </div>
+
+    </section>
+
+
+<!-- ================================== -->
+<!-- INTERACTIVE MARS LANDING SEQUENCE -->
+<!-- ================================== -->
+
+<section class="landing-documentary" id="landingSequence">
+
+  <div class="landing-heading">
+    <p class="eyebrow">JULY 4, 1997 · MARS</p>
+
+    <h2>Four minutes to touchdown.<br>
+      <span>One giant leap for robotics.</span>
+    </h2>
+
+    <p>
+      Follow Mars Pathfinder through its entry,
+      descent, and landing on the red planet.
+    </p>
+  </div>
+
+
+  <!-- ANIMATION VIEWPORT -->
+
+  <div class="landing-scene" id="landingScene">
+
+    <div class="landing-stars"></div>
+
+    <div class="mars-horizon"></div>
+
+    <!-- PARACHUTE -->
+    <div class="parachute" id="parachute">
+      <div class="parachute-canopy"></div>
+      <div class="parachute-line"></div>
+    </div>
+
+    <!-- SPACECRAFT -->
+    <div class="landing-craft" id="landingCraft">
+
+      <div class="heat-shield" id="heatShield"></div>
+
+      <div class="lander-body" id="landerBody">
+
+        <div class="lander-center"></div>
+
+        <!-- FOUR AIRBAG CUSHIONS -->
+        <div class="airbag airbag-top"></div>
+        <div class="airbag airbag-bottom"></div>
+        <div class="airbag airbag-left"></div>
+        <div class="airbag airbag-right"></div>
+
+        <!-- LANDER PETALS -->
+        <div class="petal petal-top"></div>
+        <div class="petal petal-bottom"></div>
+        <div class="petal petal-left"></div>
+        <div class="petal petal-right"></div>
+
+      </div>
+
+      <!-- RETRO ROCKET FLAMES -->
+      <div class="rocket-flame"></div>
+
+    </div>
+
+
+    <!-- SOJOURNER -->
+    <div class="landing-rover" id="landingRover">
+
+      <div class="mini-rover-body"></div>
+
+      <div class="mini-wheel wheel-left"></div>
+      <div class="mini-wheel wheel-center"></div>
+      <div class="mini-wheel wheel-right"></div>
+
+      <div class="mini-antenna"></div>
+
+    </div>
+
+
+    <!-- RAMP -->
+    <div class="rover-ramp" id="roverRamp"></div>
+
+    <div class="landing-caption" id="landingVisualLabel">
+      APPROACHING MARS
+    </div>
+
+  </div>
+
+
+  <!-- STAGE INFORMATION -->
+
+  <div class="landing-information">
+
+    <p class="eyebrow" id="landingStageNumber">
+      EVENT 01 / 08
+    </p>
+
+    <h3 id="landingStageTitle">
+      Approaching the Red Planet
+    </h3>
+
+    <p id="landingStageText">
+      After traveling from Earth, I
+      reached the Martian atmosphere.
+    </p>
+
+    <div class="landing-time" id="landingTime">
+      BEFORE TOUCHDOWN
+    </div>
+
+  </div>
+
+
+  <!-- ANIMATION CONTROLS -->
+
+  <div class="landing-controls">
+
+    <button id="playLanding" class="primary-btn">
+      PLAY LANDING SEQUENCE →
+    </button>
+
+    <button id="pauseLanding" class="secondary-btn" disabled>
+      PAUSE
+    </button>
+
+    <button id="replayLanding" class="secondary-btn">
+      REPLAY ↻
+    </button>
+
+  </div>
+
+  <p class="animation-note">
+    This is a simplified educational visualization.
+    The full landing sequence took approximately four minutes.
+    Historical waiting periods are compressed.
+  </p>
+
+</section>
+
+
+  </main>
+
+  <section class="sources">
+  <h2>EXPLORE THE ORIGINAL MISSION</h2>
+
+  <a href="https://science.nasa.gov/mission/mars-pathfinder/"
+     target="_blank">
+    NASA — Mars Pathfinder Mission
+  </a>
+
+  <a href="https://science.nasa.gov/resource/pathfinder-on-mars-2/"
+     target="_blank">
+    NASA — Pathfinder on Mars
+  </a>
+
+  <a href="https://www.nasa.gov/image-article/july-4-1997-sojourner-arrives-red-planet/"
+     target="_blank">
+    NASA — Sojourner Arrives on Mars
+  </a>
+
+  <a href="https://science.nasa.gov/resource/sojourners-farthest-journey/"
+     target="_blank">
+    NASA — Sojourner's Farthest Journey
+  </a>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>THE LOST TRUTH: A JOURNEY THROUGH TIME</p>
+    <p>NASA MARS PATHFINDER / SOJOURNER</p>
+    <p>By Akshita Nanduri, Raghava Nanduri, Ailinh Le, and Isaiah Halder</p>
+    <p>© 2026 Akshita Nanduri. All Rights Reserved.</p>
+  </footer>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
